@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>注册</title>
+<link rel="stylesheet" type="text/css" href="css/zhuce.css"/>
+</head>
+<body>
+	<!--header-->
+	<div class="header">
+		<img src="img/ll.gif"/>
+		<ul class="china">
+			<li>语言：<a href="">简体中文</a></li>
+			<li>国家/地区:<a href="">中国</a></li>
+			<li class="help"><a href="">帮助</a></li>
+		</ul>
+		
+	</div>
+	<!--背景图-->
+	<div class="bjt">
+		<img src="img/operatbg.jpg"/>
+		<div class="form w">
+			<ul class="nnv w">
+				<li class="zhuce">注册</li>
+				<li class="denlu"><a href="denglu.html">立即登录</a></li>
+			</ul>
+		     <input type="text" class="shouji" placeholder="手机号" />
+		     <span class="ys"></span>
+			 <input type="text" class="mima" placeholder="密码" />
+			 <input type="text" class="yzm" placeholder="6位验证码" />
+			 <input class="check" type="checkbox"  />
+			 <p>我已阅读并同意  <a href="">乐视用户协议</a></p>
+			  <input type="button" class="btn" value="注   册" />
+			  <span class="btnSpan"></span>
+		</div>
+	</div>
+</body>
+</html>
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript">
+	
+	$(".btn").click(function(){
+//		1:创建对象
+		let xhr = new XMLHttpRequest();
+//		2:设置参数
+		let shoujiVal = $(".shouji").val();
+		let pwd = $(".mima").val();
+		xhr.open('get','php/checkname01.php?user='+shoujiVal+"&pwd="+pwd,true);
+//		console.log(shoujiVal)
+//		3:设置回调(接收服务的反馈)
+		xhr.onreadystatechange = function(){
+			if(xhr.readyState == 4 && xhr.status == 200){
+//				alert(xhr.responseText);
+				if(parseInt(xhr.responseText) == 1){
+					$(".ys").html("已注册");
+				}else{
+					$(".ys").html("注册成功");
+				}
+			}else{
+				$('.btnSpan').innerHTML = "你出错了！"
+			}
+		}
+//		4:发送请求
+		xhr.send();    //如果用get发送请求,这里可以写null
+	}
+	)
+	
+	/////////////////////////////////////
+//	
+$(".shouji").blur(function(){
+		var ppa = /^1([38]\d|5[0-35-9]|7[3678])\d{8}$/;
+//		
+		if(ppa.test($('.shouji').val()) && $('.shouji').val() !=''){
+			
+	     $('.ys').html('正确');
+			
+		}else{
+			$('.ys').html('错误');
+		}
+		
+	})
+
+
+</script>

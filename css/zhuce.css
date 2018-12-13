@@ -1,0 +1,131 @@
+body,div,p,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,table,tr,form
+	{margin:0;
+	padding:0;
+		}
+ ul li{
+ 	list-style: none;
+ }
+ a{
+ 	text-decoration: none;
+ }
+ .w{
+ 	width:380px;
+ 	margin:0 auto;
+ }
+.header{
+	width:1390px;
+	height:88px;
+/*	background: red;*/
+	margin:0 auto;
+}
+.header img{
+	float:left;
+}
+.china{
+	float:right;
+	margin-top:50px;
+}
+.china li{
+	width:130px;
+	float:left;
+	text-align: center;
+	border-right:1px solid black;
+	color:#a4a4a4;
+}
+.china .help a{
+	margin-right:50px;
+	
+}
+.china .help{
+	border-right:none;
+}
+.china li a{
+	color:#a4a4a4;
+}
+.china li:hover a{
+	color:cornflowerblue;
+}
+/*邮箱*/
+.form{
+	width:430px;
+	height:460px;
+	position: absolute;
+	top:11px;
+	right:9px;
+	background: white;
+}
+.form ul li{
+	margin-top:24px;
+}
+.nnv{
+	height:45px;
+}
+.bjt{
+	
+	position: relative;
+}
+.bjt img{
+	width:1440px;
+	height:480px;
+}
+.zhuce{
+	float:left;
+}
+.denlu{
+	float:right;
+}
+.zhuce{
+	font-size:20px;
+}
+.denlu a{
+	color:#009de6;
+}
+.shouji{
+	width:380px;
+	height:40px;
+	margin-left: 23px;
+	margin-top:20px;
+}
+.mima{
+	width:380px;
+	height:40px;
+	margin-left: 23px;
+	margin-top:20px;
+}
+.yzm{
+	width:380px;
+	height:40px;
+	margin-left: 23px;
+	margin-top:20px;
+}
+.check{
+	width:20px;
+	height:20px;
+	margin-left: 23px;
+    margin-top: 10px;
+}
+.form p{
+	float:right;
+	margin-right: 169px;
+	margin-top: 10px;
+}
+.form p a{
+	color:#009de6;
+}
+.btn{
+	background:#009de6 ;
+	font-size:20px;
+	font-weight: 300;
+	color:white;
+	width:380px;
+	height:40px;
+	margin-left: 23px;
+	margin-top:20px;
+}
+.ys{
+	position: absolute;
+	top: 118px;
+	left: 100px;
+	color: red;
+	font-size: 12px;
+}

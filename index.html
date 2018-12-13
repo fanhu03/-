@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>乐视首页</title>
+<link rel="stylesheet" type="text/css" href="css/index.css"/>
+ <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="css/swiper.min.css">
+   <!-- Demo styles -->
+  <style>
+    html, body {
+      height: 100%;
+    }
+    .swiper-container {
+      width: 100%;
+      height: 400px;
+     
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .swiper-wrapper img{
+    	width:1440px;
+    	height:400px;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: red;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+    .swiper-pagination span{
+
+    }
+  </style>
+</head>
+<body>
+	<!--nav-->
+	<div class="header">
+		<div class="head w">
+			<ul class="left">
+				<li><a class="del" href="denglu.html">登录</a>|
+					<a class="delr" href="zhuce.html">注册</a></li>
+				<li><a href="">个人中心</a></li>
+				<li class="lione"><a  href="">合作渠道</a>
+					<div class="div"><a href="">电视官网</a></div>
+					<span></span></li>
+				<li class="litwo"><a   href="">帮助中心</a>
+					<ul class="ol" style="z-index: 700;">
+						<li><a href="">配送安装</a></li>
+						<li><a href="">售后服务</a></li>
+						<li><a href="">运费标准</a></li>
+						<li><a href="">联系客服</a></li>
+					</ul>
+					<span></span></li>	
+				<li class="lithree"><a  href="">手机版</a><span></span>
+					<div class="immg">
+					    <a href=""><img src="img/12540050008480802.jpg"/></a>
+					    <a href=""><img src="img/11.jpg"/></a>
+					</div>
+				</li>
+			</ul>
+		</div>
+		
+	</div>
+  <!--导航-->	
+    <div class="navv">
+    	<div class="naa w">
+    		<div class="naaleft">
+    			<a href=""><img src="img/le.gif"/ style="float: left;"></a>
+    			<input class="put" type="text/css" placeholder="行车记录仪"/>
+    			<input class="btn" type="button"  value="搜索" />
+    			<span style="margin-left: 650px;margin-top:30px;"><a href=""><img src="img/gw.gif"/></a><a class="gouw" href="" >购物车</a></span>
+    		</div>
+    		<div class="naaright">
+    			<ul class="nvv">
+    				<li class="first"><img src="img/san.gif" />生态品类</li>
+    			<ul class="daohang">
+    				<li class="caidan"><a href="">爆款推荐</a><span>></span>
+    			<ul class="dianshi">
+    				<li>
+    			   <a href=""><img src="img/01.jpg"/><span>x40</span></a>
+    			   <a href=""><img src="img/1509016103807.jpg"/><span>x40</span></a>
+    				<a href=""><img src="img/1509016140427.jpg"/><span>x40</span></a>
+    				<a href=""><img src="img/1509016159603.jpg"/><span>x40</span></a>
+    				</li>
+    				<li>
+    				<a href=""><img src="img/01.jpg"/><span>x40</span></a>
+    			   <a href=""><img src="img/1509016103807.jpg"/><span>x40</span></a>
+    				<a href=""><img src="img/1509016140427.jpg"/><span>x40</span></a>
+    				<a href=""><img src="img/1509016159603.jpg"/><span>x40</span></a>
+    				</li>
+    				<li>
+    				<a href=""><img src="img/01.jpg"/><span>x40</span></a>
+    			    <a href=""><img src="img/1509016103807.jpg"/><span>x40</span></a>
+    			    <a href=""><img src="img/1509016140427.jpg"/><span>x40</span></a>
+    				<a href=""><img src="img/1509016159603.jpg"/><span>x40</span></a>
+    				</li>
+    							<li></li>
+    							
+    						</ul>
+    						
+    					</li>
+    					<li><a href="">电视系列</a><span>></span></li>
+    					<li><a href="">电视类型</a><span>></span></li>
+    					<li><a href="">屏幕尺寸</a><span>></span></li>
+    					<li><a href="">智能硬件</a><span>></span></li>
+    					<li class="shop"><a href="">精品配件</a><span>></span></li>
+    				</ul>
+    				<li class="ttw"><a href="">乐视视频</a></li>
+    				<li class="ttf"><a href="">乐视会员</a></li>
+    				<li class="tth"><a href="">乐迷社区</a></li>
+    				<li class="last"><a href="">大客户通道</a></li>
+    			</ul>
+    			<a class="kefu" href=""><img src="img/men.gif"/>在线客服</a>
+    		</div>
+    		
+    	</div>
+    </div>
+    
+   <!--背景图--> 
+   <div id="bjt"></div>
+   	
+     <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+      	<a href=""><img src="img/bjt.jpg"/></a>
+      </div>
+      <div class="swiper-slide">
+      	<a href=""><img src="img/bjt1.jpg"/></a>
+      </div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+<!--新闻-->
+ <div class="xinwen">
+ 	 <div class="news w">
+ 	 	<ul>
+ 	 		<li class="newleft">
+ 	 			<div><h3>商城公告</h3>
+ 	 			<span>MORE></span></div>
+ 	 			<p>【公告】乐视商城新品发售</p>
+ 	 			<p>【公告】防诈骗声明</p>
+ 	 			
+ 	 		</li>
+ 	 		<li><a class="immgg" href="zerotv.html"><img src="img/1538292769839.jpg"/></a></li>
+ 	 		<li><a class="immgg"  href="zerotv.html"><img src="img/1539657336335.jpg"/></a></li>
+ 	 		<li><a class="immgg"  href="zerotv.html"><img src="img/1519869319798.jpg"/></a></li>
+ 	 		<li><a href=""><img src="img/1509076650133.jpg"/></a></li>
+ 	 	</ul>
+ 	 	
+ 	 </div>
+ 	
+ </div>
+ <!--智能大屏-->
+  <div class="tv">
+  	  <div class="tvv w">
+  	  	 <div class="toptv">
+  	  	 	<div class="topp">
+  	  	 	<img src="img/tv.gif"  />
+  	  	 	<span>智能大屏</span>
+  	  	 	</div>
+  	  	 	
+  	  	 	<div class="chicun">
+  	  	 		<div class="cun">
+  	  	 			<a href="">40吋</a>
+	  	  	 		<a href="">50吋</a>
+	  	  	 		<a href="">55吋</a>
+	  	  	 		<a class="lasta" href="">60吋</a>
+  	  	 		</div>
+  	  	 		
+  	  	 	</div>
+  	  	 </div>
+  	  	<ul class="super">
+  	  		<li class="fistli">
+  	  			<a href=""><img src="img/1543228608054.jpg"/></a>
+  	  			<div class="bt"></div>
+  	  		</li>
+  	  		<li class="good">
+  	  			<a href=""><img src="img/1539658050032.jpg"/></a>
+  	  		  <div>
+  	  		  	  <h1>X50 Pro</h1>
+  	  		  	  <p>4kHDR超清真彩|16GB高速闪存</p>
+  	  		  	   <h5>￥2599</h5>
+  	  		  </div>
+  	  			
+  	  		</li>
+  	  	</ul>
+  	  	 <ul class="super">
+  	  	 	<li class="good">
+  	  			<a href=""><img src="img/1542703243186.jpg"/></a>
+  	  		  <div>
+  	  		  	  <h1>X40C</h1>
+  	  		  	  <p>4kHDR超清真彩|16GB高速闪存</p>
+  	  		  	   <h5>￥1599</h5>
+  	  		  	   <img class="imgs" src="img/rem.gif"/>
+  	  		  </div>
+  	  			
+  	  		</li>
+  	  		<li class="good">
+  	  			<a href=""><img src="img/1539658667158.jpg"/></a>
+  	  		  <div>
+  	  		  	  <h1>X65L</h1>
+  	  		  	  <p>4kHDR超清真彩|16GB高速闪存</p>
+  	  		  	   <h5>￥4099</h5>
+  	  		  	    <img class="imgs" src="img/rem.gif"/>
+  	  		  </div>
+  	  			
+  	  		</li>
+  	  	 </ul>
+  	  	 <ul class="super">
+  	  	 	<li class="good">
+  	  			<a href=""><img src="img/1539658983522.jpg"/></a>
+  	  		  <div>
+  	  		  	  <h1>X50L</h1>
+  	  		  	  <p>4kHDR超清真彩|16GB高速闪存</p>
+  	  		  	   <h5>￥2099</h5>
+  	  		  </div>
+  	  			
+  	  		</li>
+  	  		<li class="good">
+  	  			<a href=""><img src="img/1539658528301.jpg"/></a>
+  	  		  <div>
+  	  		  	  <h1>X40L</h1>
+  	  		  	  <p>4kHDR超清真彩|16GB高速闪存</p>
+  	  		  	   <h5>￥2599</h5>
+  	  		  	    <img class="imgs" src="img/rem.gif"/>
+  	  		  </div>
+  	  			
+  	  		</li>
+  	  	 </ul>
+  	  	</div>
+  	  </div>
+  	  	
+  	<!--配件-->  	
+  	<div class="peijian">
+  		<div class="fo w">
+  			<div class="toptv">
+  	  	 	<div class="topp">
+  	  	 	<img src="img/erj.gif"/>
+  	  	 	<span>精品配件</span>
+  	  	 	</div>
+  	  	 <div class="chicun">
+  	  	 		<div class="cun">
+  	  	 			<a href="">底座</a>
+	  	  	 		<a href="">挂件</a>
+	  	  	 		<a class="lasta" href="">游戏娱乐</a>
+  	  	 		</div>
+  	  	 	</div>
+  	  	 </div>
+  	  	 <ul class="bot">
+  	  	 	<li>
+  	  	 		<a href=""><img src="img/10736046417974164.jpg"/></a>
+  	  	 		<p>乐视超级移动电源</p>
+  	  	 		<h5>￥49.9</h5>
+  	  	 	</li>
+  	  	 	<li>
+  	  	 		<a href=""><img src="img/1539828361222.jpg"/></a>
+  	  	 		<p>二合一充电器</p>
+  	  	 		<h5>￥49</h5>
+  	  	 	 </li>
+  	  	 	  <li>
+  	  	 		<a href=""><img src="img/1539828607760.jpg"/></a>
+  	  	 		<p>电源适配器24W</p>
+  	  	 		<h5>￥39</h5>
+  	  	 	</li>
+  	  	 </ul>
+  	  	  <ul class="bot">
+  	  	 	<li>
+  	  	 		<a href=""><img src="img/1539830007433.jpg"/></a>
+  	  	 		<p>固定挂架LS698SFP</p>
+  	  	 		<h5>￥49</h5>
+  	  	 	</li>
+  	  	 	<li>
+  	  	 		<a href=""><img src="img/1539832904920.jpg"/></a>
+  	  	 		<p>旋转支架LS050NN</p>
+  	  	 		<h5>￥119</h5>
+  	  	 	 </li>
+  	  	 	  <li>
+  	  	 		<a href=""><img src="img/2263713984088221.jpg"/></a>
+  	  	 		<p>乐视运动蓝牙耳机</p>
+  	  	 		<h5>￥69.9</h5>
+  	  	 	</li>
+  	  	 </ul>
+  	  	  <ul class="bot">
+  	  	 	<li>
+  	  	 		<a href=""><img src="img/1539835542058.jpg"/></a>
+  	  	 		<p>乐视超级移动电源</p>
+  	  	 		<h5>￥49.9</h5>
+  	  	 	</li>
+  	  	 	<li>
+  	  	 		<a href=""><img src="img/1539835722160.jpg"/></a>
+  	  	 		<p>二合一充电器</p>
+  	  	 		<h5>￥49</h5>
+  	  	 	 </li>
+  	  	 	  <li>
+  	  	 		<a href=""><img src="img/1539828607760.jpg"/></a>
+  	  	 		<p>电源适配器24W</p>
+  	  	 		<h5>￥199</h5>
+  	  	 	 </li>
+  	  	  </ul>
+  	  	 <div class="wuliu">
+  	  	 	   <ul>
+  	  	 	   	<li class="true"><img src="img/zheng.gif"/><span>正品保障</span></li>
+  	  	 	   	<li><a href=""><img src="img/qi.gif"/><span>七天无理由退货</span></a></li>
+  	  	 	   	<li><a href=""><img src="img/huo.gif"/><span>物流服务</span></a></li>
+  	  	 	   	<li><a href=""><img src="img/ding.gif"/><span>售后服务网点</span></a></li>
+  	  	 	   </ul>
+  	  	 </div>
+  	  	 
+  	</div>
+ </div>
+  	
+  	<!--底部-->
+  	<div class="foot">
+  		<div class="footleft w">
+  			<ul>
+  				<li>选购及了解</li>
+  				<li><a href="">超级电视</a></li>
+  				<li><a href="">屏霸</a></li>
+  				<li><a href="">乐视盒子</a></li>
+  			</ul>
+  			<ul>
+  				<li>会员相关</li>
+  				<li><a href="">超级影视会员</a></li>
+  			</ul>
+  			<ul>
+  				<li>帮助中心</li>
+  				<li><a href="">新手入门</a></li>
+  				<li><a href="">物流服务</a></li>
+  				<li><a href="">售后政策</a></li>
+  				<li><a href="">安装报修</a></li>
+  			</ul>
+  			<ul>
+  				<li>服务支持</li>
+  				<li><a href="">自助服务</a></li>
+  				<li><a href="">乐码通道</a></li>
+  			</ul>
+  			<ul>
+  				<li>关于乐视商城</li>
+  				<li><a href="">公司介绍</a></li>
+  				<li><a href="">联系我们</a></li>
+  				<li><a href="">加入我们</a></li>
+  				<li><a href="">关注我们</a></li>
+  			</ul>
+  			<h3>在线客服8:00-21:00</h3>
+  			<h5>1010-9000 8:00-21:00</h5>
+  		</div>
+  	</div>
+  	  	<div id="btn1">回到顶部</div>
+
+  	
+  
+ 
+ 
+ 
+ 
+    
+</body>
+</html>
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+  <!-- Swiper JS -->
+  <script src="js/swiper.min.js"></script>
+<script type="text/javascript" src="js/cssTools.js"></script>
+<<!--script type="text/javascript" src="js/move1808.js"></script>	-->
+<script type="text/javascript" src="js/slider.js"></script>
+
+<script type="text/javascript">
+	$(".litwo").mouseover(function(){
+		
+		$(".ol").css("display","block");
+		$(".litwo").css("backgroundColor","blue");
+		$(".ol").css("z-index",10);
+	})
+	$(".litwo").mouseout(function(){
+  $(".ol").css("display","none");
+  $(".litwo").css("backgroundColor","black");
+});
+
+$(".lione").mouseover(function(){
+		
+		$(".div").css("display","block");
+		$(".lione").css("backgroundColor","red");
+	})
+	$(".lione").mouseout(function(){
+$(".div").css("display","none");
+ $(".lione").css("backgroundColor","black");
+});
+
+$(".lithree").mouseover(function(){
+		
+      $(".immg").css("display","block");
+       $(".lithree").css("backgroundColor","yellow");
+       $(".lithree").css("color","#000000");
+      $(".immg").css("z-index","10");
+       
+	})
+	$(".lithree").mouseout(function(){
+  $(".immg").css("display","none");
+$(".lithree").css("backgroundColor","black");
+});
+
+$(".caidan").mouseover(function(){
+	  $(".dianshi").css("display","block");
+})
+$(".caidan").mouseout(function(){
+	$(".dianshi").css("display","none");
+})
+
+
+
+/*---------------------------*/
+   var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+    
+    
+    
+    //------------------------------------------------
+    $("#btn1").click(function(){
+        $(window).scrollTop(0)
+    
+ })
+    //删除cookie函数
+	function removeCookie(cname) {
+		setCookie(cname, "", -1);
+	}
+	//设置cookie函数
+	function setCookie (cname,cvalue,exdays) {//设置cookie函数
+		var d=new Date();
+		d.setDate(d.getDate()+exdays);
+		document.cookie=cname+'='+cvalue+';expires='+d.toGMTString();
+	}
+	//获取cookie函数
+	function getCookie (cname) {//获取cookie函数
+		var cname=cname+'=';
+		var arr=document.cookie.split(';');
+		for(var i in arr){
+			var c=arr[i].trim();
+			if(c.indexOf(cname)!=-1){
+				return c.substring(cname.length)
+			}
+		}
+		return '';
+	}	
+    
+    var shop=[
+	   {
+	   	'img':'shop0101'
+	   },
+	   {
+	   	'img':'shop0201'
+	   },
+	   {
+	   	'img':'shop0301'
+	   }
+    ]
+
+    $('.immgg ').each(function(i){
+	$(this).click(function(){
+		setCookie("img",shop[i].img,7);		
+	})
+});
+
+    
+    
+</script>
